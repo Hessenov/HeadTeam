@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 55px;
+}
+.format__bold-text {
+  font-weight: 700;
+  color: #1e4681;
+  line-height: 130%;
+  font-size: 25px;
+}
+.format__ordinary-text {
+  line-height: 130%;
+  font-size: 18px;
+}
+.format__items-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+}
+.syllabus__items-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+.syllabus__items-wrapper img {
+  object-fit: contain;
+  width: 120%;
+}
+.format__item {
+  width: 30%;
+  min-width: 150px;
+  box-sizing: border-box;
+}
+.syllabus__item {
+  width: 30%;
+  margin: 1%;
+  min-width: 175px;
+  max-width: 400px;
+  height: auto;
+  box-sizing: content-box;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 10%;
+}
+.syllabus__bold-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  margin-bottom: 1em;
+}
+.syllabus__ordinary-text {
+  font-size: 25px;
+  margin-bottom: 1em;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.result__list {
+  line-height: 150%;
+  width: 50%;
+  min-width: 300px;
+  font-size: 24px;
+}
+.format__wrapper {
+  margin-bottom: 10%;
+}
+.result__wrapper {
+  margin-top: 1em;
+  margin-bottom: 10%;
+}
+.syllabus__text-wrapper {
+  margin-left: 1em;
+}
+@media (max-width: 1279px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .format__bold-text {
+    font-size: 15px;
+  }
+
+  .format__ordinary-text {
+    font-size: 11px;
+  }
+  .result__list {
+    font-size: 14px;
+  }
+  .syllabus__bold-text {
+    font-size: 17px;
+  }
+  .syllabus__ordinary-text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 991px) {
+  .title {
+    font-size: 26px;
+  }
+  .format__bold-text {
+    font-size: 12px;
+  }
+  .format__ordinary-text {
+    font-size: 10px;
+  }
+  .result__list {
+    font-size: 12px;
+  }
+  .syllabus__bold-text {
+    font-size: 14px;
+  }
+  .syllabus__ordinary-text {
+    font-size: 12px;
+  }
+}
