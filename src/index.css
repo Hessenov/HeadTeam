@@ -21,7 +21,7 @@ body {
 }
 .format__bold-text {
   font-weight: 700;
-  color: #1e4681;
+  color: #000000;
   line-height: 130%;
   font-size: 25px;
 }
@@ -131,7 +131,7 @@ img {
     font-size: 12px;
   }
 }
-=======
+
 .logo {
   margin-top: 21px;
   margin-bottom: 100px;
@@ -264,6 +264,7 @@ img {
 .time__container {
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
 }
 .operator2 {
   width: 232px;
@@ -446,9 +447,10 @@ img {
   margin-top: 22px;
 }
 .contact_number_detail img {
+  margin: auto 22px;
   width: 27px;
   height: 27px;
-  margin-right: 22px;
+  margin-left: 0;
 }
 .contact_number_detail p {
   font-family: "Roboto", sans-serif;
