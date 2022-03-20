@@ -1,6 +1,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&family=Roboto:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600&display=swap");
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -29,6 +85,7 @@ body {
   line-height: 130%;
   font-size: 18px;
 }
+
 .format__items-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -39,6 +96,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
+  margin-bottom: 120px;
 }
 .syllabus__items-wrapper img {
   object-fit: contain;
@@ -82,54 +140,19 @@ img {
 .format__wrapper {
   margin-bottom: 10%;
 }
+.format__wrapper h1 {
+  margin-bottom: 89px;
+}
+.format__bold-text {
+  margin-bottom: 5px;
+  color: #1e4681;
+}
 .result__wrapper {
   margin-top: 1em;
-  margin-bottom: 10%;
+  margin-bottom: 200px;
 }
 .syllabus__text-wrapper {
   margin-left: 1em;
-}
-@media (max-width: 1279px) {
-  .title {
-    font-size: 32px;
-  }
-
-  .format__bold-text {
-    font-size: 15px;
-  }
-
-  .format__ordinary-text {
-    font-size: 11px;
-  }
-  .result__list {
-    font-size: 14px;
-  }
-  .syllabus__bold-text {
-    font-size: 17px;
-  }
-  .syllabus__ordinary-text {
-    font-size: 14px;
-  }
-}
-@media (max-width: 991px) {
-  .title {
-    font-size: 26px;
-  }
-  .format__bold-text {
-    font-size: 12px;
-  }
-  .format__ordinary-text {
-    font-size: 10px;
-  }
-  .result__list {
-    font-size: 12px;
-  }
-  .syllabus__bold-text {
-    font-size: 14px;
-  }
-  .syllabus__ordinary-text {
-    font-size: 12px;
-  }
 }
 
 .logo {
@@ -139,6 +162,7 @@ img {
 .data__container {
   display: flex;
   margin-top: 97px;
+  align-items: center;
 }
 .data img {
   margin-right: 8px;
@@ -147,8 +171,9 @@ img {
 .data p {
   font-family: "Roboto";
   margin-right: 25px;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  /* margin-top: 8px;
+  margin-bottom: 8px; */
+  font-size: 20px;
 }
 .question {
   width: 100%;
@@ -181,18 +206,24 @@ img {
   width: 414px;
   height: 62px;
 }
-
+.format__wrapper {
+  margin-top: 178px;
+}
 .question_image {
   width: 305px;
   height: 376px;
   height: 100%;
+}
+.question_image img {
+  width: 304px;
+  height: 356px;
 }
 
 .quote__container {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 106px;
+  margin-top: 50px;
   width: 100%;
 }
 
@@ -241,7 +272,8 @@ img {
 .about_info_generaltext {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  align-items: end;
 }
 .about_info p {
   font-family: "Roboto Slab";
@@ -257,7 +289,6 @@ img {
   text-align: center;
 }
 .operator1 img {
-  width: 504px;
   height: 315px;
   margin: 0 auto;
 }
@@ -298,6 +329,9 @@ img {
   width: 100%;
   padding-top: 91px;
   padding-bottom: 111px;
+}
+.title {
+  margin-bottom: 70px;
 }
 .members h1 {
   font-family: "Roboto Slab", serif;
@@ -452,6 +486,9 @@ img {
   height: 27px;
   margin-left: 0;
 }
+.contact_container {
+  display: flex;
+}
 .contact_number_detail p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -507,6 +544,9 @@ img {
     height: 100%;
     width: 80%;
   }
+  /* .syllabus__items-wrapper{
+    justify-content: center;
+  } */
   .question_image {
     height: 21px;
   }
@@ -646,6 +686,7 @@ img {
     padding-top: 103px;
     padding-bottom: 115px;
   }
+
   .price h1 {
     font-size: 32px;
     line-height: 101.38%;
@@ -708,6 +749,32 @@ img {
   .contact_number_detail p {
     font-size: 14px;
   }
+  .title {
+    font-size: 32px;
+    margin-top: 100px;
+  }
+  .result__wrapper {
+    margin-bottom: 0;
+  }
+  .format__bold-text {
+    font-size: 15px;
+  }
+  .format__wrapper {
+    margin-top: 40px;
+  }
+
+  .format__ordinary-text {
+    font-size: 11px;
+  }
+  .result__list {
+    font-size: 14px;
+  }
+  .syllabus__bold-text {
+    font-size: 17px;
+  }
+  .syllabus__ordinary-text {
+    font-size: 14px;
+  }
 }
 @media (max-width: 991px) {
   .logo img {
@@ -748,7 +815,7 @@ img {
     width: 80%;
   }
   .question_text h1 {
-    font-size:37px;
+    font-size: 37px;
     margin-top: 3px;
     margin-bottom: 0px;
   }
@@ -760,7 +827,7 @@ img {
   .question_image {
     height: 200px;
     margin: 0 auto;
-    margin-left:50%;
+    margin-left: 50%;
   }
   .question_image img {
     width: 100%;
@@ -794,7 +861,7 @@ img {
     width: 130.7px;
     height: 21.27px;
   }
-  
+
   .about {
     margin: 0 auto;
   }
@@ -805,7 +872,6 @@ img {
   .about__container {
     margin: 0 auto;
     height: 70%;
-    
   }
   .about_info_generaltext {
     flex-direction: column;
@@ -961,10 +1027,43 @@ img {
   .contact_number_detail p {
     font-size: 12px;
   }
+  .title {
+    font-size: 26px;
+  }
+
+  .format__bold-text {
+    font-size: 12px;
+  }
+  .format__ordinary-text {
+    font-size: 10px;
+  }
+  .result__list {
+    font-size: 12px;
+    width: 80%;
+  }
+  .syllabus__bold-text {
+    font-size: 14px;
+  }
+  .syllabus__ordinary-text {
+    font-size: 12px;
+  }
+}
+@media (max-width: 690px) {
+  .syllabus__items-wrapper {
+    justify-content: center;
+  }
+
+  .result__wrapper .result__list{
+    min-width: 200px;
+  }
 }
 @media (max-width: 400px) {
   .members_general {
     width: 100%;
     height: 100%;
+  }
+  .question_text h1 {
+    width: 100px;
+    margin-bottom: 30px;
   }
 }
