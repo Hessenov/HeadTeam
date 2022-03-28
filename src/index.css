@@ -96,7 +96,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  margin-bottom: 120px;
+  margin-bottom: 15%;
 }
 .syllabus__items-wrapper img {
   object-fit: contain;
@@ -106,6 +106,7 @@ body {
   width: 30%;
   min-width: 150px;
   box-sizing: border-box;
+  margin-bottom: 10%;
 }
 .syllabus__item {
   width: 30%;
@@ -120,12 +121,11 @@ body {
 .syllabus__bold-text {
   font-weight: 700;
   font-size: 30px;
-  line-height: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 .syllabus__ordinary-text {
   font-size: 25px;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 img {
   max-width: 100%;
@@ -138,18 +138,30 @@ img {
   font-size: 24px;
 }
 .format__wrapper {
-  margin-bottom: 10%;
+  margin-top: 10%;
+  margin-bottom: 15%;
 }
 .format__wrapper h1 {
-  margin-bottom: 89px;
+  margin-bottom: 10%;
 }
 .format__bold-text {
-  margin-bottom: 5px;
+  margin-bottom: 5%;
   color: #1e4681;
 }
 .result__wrapper {
-  margin-top: 1em;
-  margin-bottom: 200px;
+  margin-bottom: 15%;
+}
+.result__wrapper h1 {
+  margin-bottom: 5%;
+}
+.title {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.about_info h1 {
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 .syllabus__text-wrapper {
   margin-left: 1em;
@@ -171,8 +183,6 @@ img {
 .data p {
   font-family: "Roboto";
   margin-right: 25px;
-  /* margin-top: 8px;
-  margin-bottom: 8px; */
   font-size: 20px;
 }
 .question {
@@ -206,9 +216,7 @@ img {
   width: 414px;
   height: 62px;
 }
-.format__wrapper {
-  margin-top: 178px;
-}
+
 .question_image {
   width: 305px;
   height: 376px;
@@ -330,9 +338,7 @@ img {
   padding-top: 91px;
   padding-bottom: 111px;
 }
-.title {
-  margin-bottom: 70px;
-}
+
 .members h1 {
   font-family: "Roboto Slab", serif;
   font-weight: 700;
@@ -751,16 +757,12 @@ img {
   }
   .title {
     font-size: 32px;
-    margin-top: 100px;
   }
   .result__wrapper {
     margin-bottom: 0;
   }
   .format__bold-text {
     font-size: 15px;
-  }
-  .format__wrapper {
-    margin-top: 40px;
   }
 
   .format__ordinary-text {
@@ -835,10 +837,18 @@ img {
   }
   .quote__container {
     display: flex;
+    justify-content: start;
     align-items: flex-end;
     margin: 0 auto;
     width: 80%;
     height: 30%;
+  }
+  .quote {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .time {
+    margin-bottom: 20%;
   }
   .quote_text {
     background: #1e4681;
@@ -1048,14 +1058,20 @@ img {
     font-size: 12px;
   }
 }
-@media (max-width: 690px) {
+@media (max-width: 991px) {
   .syllabus__items-wrapper {
     justify-content: center;
   }
-
-  .result__wrapper .result__list{
+  .syllabus__item {
+    margin: 3%;
+  }
+  .result__wrapper .result__list {
     min-width: 200px;
   }
+}
+.syllabus_wrapper h1 {
+  margin-top: 15%;
+  margin-bottom: 10%;
 }
 @media (max-width: 400px) {
   .members_general {
